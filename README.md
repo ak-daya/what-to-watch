@@ -6,6 +6,13 @@ What are the factors that lead to hit movie? I developed and evaluated various s
 - /data: contains the raw and cleaned dataset
 - process_notebook.ipynb: contains the process notebook (Jupyter Notebook) explaining the entire research process including data cleaning, processing and model design and development process. 
 
+Note:
+
+There are two datasets used in this experiment. In the /data/raw folder, the first file is titled movies.csv. The second dataset used to augment the first is too large to be uploaded to GitHub. It can be downloaded from IMDb's data repo:
+
+IMDb movie-language metadata dataset (https://datasets.imdbws.com/title.akas.tsv.gz)
+- associates a movie with its language. These datasets can then be merged on rows where language = english. 
+
 ### About the Data
 
 The "Movie Industry" dataset selected for this project is hosted on Kaggle (https://www.kaggle.com/datasets/danielgrijalvas/movies?resource=download). This was directly downloaded. The data contains a variety of features, but has several missing or inaccurate values as detailed below. These will be dealt with before use with a machine learning algorithm, as the quality of the training data is crucial to a model's quality.
